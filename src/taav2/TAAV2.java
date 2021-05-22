@@ -121,7 +121,7 @@ public class TAAV2 {
                             }
                             
                             //VERIFICAÇÃO PARA SABER SE EXISTE A QUANTIDADE SOLICITADA EM ESTOQUE.
-                            if(produtos.get(indicevnd1).getQtdProduto() >= qtdProduto && qtdProduto != -1 ){
+                            if(produtos.get(indicevnd1).getQtdProduto() >= qtdProduto && qtdProduto >0){
                                 
                                 do{
                                     try {
@@ -238,7 +238,7 @@ public class TAAV2 {
                          
                                 if(f.getNome() != null){
                                     funcionarios.add(f);
-                                    System.out.println("\nFUNCIONARIO >>>"+f.getNome()+"<<< CADASTRADO COM SUCESSO\n");
+                                    System.out.println("\nFUNCIONARIO >>>"+f.getNome().toUpperCase()+"<<< CADASTRADO COM SUCESSO\n");
                                     System.out.println("UTILIZE SEU EMAIL PARA ACESSAR O PAINEL DE VENDAS.");
                                     System.in.read();
                                     opfuncionario = 0;
@@ -288,7 +288,7 @@ public class TAAV2 {
                       //MENU DE VENDAS  
                      utils.limpatela();
                      System.out.println("\n>>>PAINEL DO VENDEDOR<<<\n");
-                     System.out.println("LOGADO COMO: "+funcionarios.get(token).getNome());
+                     System.out.println("LOGADO COMO: "+funcionarios.get(token).getNome().toUpperCase());
                      System.out.println("\n[1] - CADASTRAR PRODUTO");
                      System.out.println("[2] - REMOVER PRODUTO");
                      System.out.println("[3] - VENDAS EFETUADAS");
@@ -387,7 +387,7 @@ public class TAAV2 {
                                 
                                 if(f1.getNome() != null && validaEmail == -1){
                                     funcionarios.add(f1);
-                                    System.out.println("\nFUNCIONARIO >>>"+f1.getNome()+"<<< CADASTRADO COM SUCESSO\n");
+                                    System.out.println("\nFUNCIONARIO >>>"+f1.getNome().toUpperCase()+"<<< CADASTRADO COM SUCESSO\n");
                                     System.out.println("UTILIZE SEU EMAIL PARA ACESSAR O PAINEL DE VENDAS.");
                                     System.in.read();
                                 }
