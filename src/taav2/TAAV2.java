@@ -238,6 +238,7 @@ public class TAAV2 {
                          
                                 if(f.getNome() != null){
                                     funcionarios.add(f);
+                                    utils.limpatela();
                                     System.out.println("\nFUNCIONARIO >>>"+f.getNome().toUpperCase()+"<<< CADASTRADO COM SUCESSO\n");
                                     System.out.println("UTILIZE SEU EMAIL PARA ACESSAR O PAINEL DE VENDAS.");
                                     System.in.read();
