@@ -412,7 +412,9 @@ public class TAAV2 {
                 }
             case 0:
                    utils.limpatela();
-                   System.out.println("\nObrigado por usar o sistema! ");
+                   System.out.print("(｡◕‿◕｡)");
+                   
+                   System.out.println("\nObrigado por usar o sistema! \n");
                    break;
             default:
                 utils.exibirDefault();
